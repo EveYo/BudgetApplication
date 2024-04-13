@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <!-- Setting the viewport to make your website look good on all device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-$END$
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container"> 
+                <!-- container for Inputs -->
+                <div class="totalBudgetContainer">
+                    <h3>My Budget</h3>
+                    <p class="hide error" id ="budgetError">
+                        Value can't be empty or negative.
+                    </p>
+                    <input type="number" id="totalBudget" placeholder="Enter your budget ^^">
+                    <button type="submit" id="totalBudgetButton">Set Budget $</button>
+                </div>
+
+                <div class="addExpenseContainer">
+                    <h3>New Expense</h3>
+                    <p class="hide error" id="expenseError">
+                        Input can't be empty.
+                    </p>
+                    <input type="text" id="productName" placeholder="Enter product/service name"/>
+                    <input type="number" id="productCost" placeholder="Enter the cost"/>
+                    <button type="submit" id="addExpenseButton">Submit new expense</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>

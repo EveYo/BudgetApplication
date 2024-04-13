@@ -1,0 +1,64 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #f7f9fd;
+}
+
+.wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.container{
+    width: 100%;
+}
+
+.sub-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper h3 {
+    color: rgb(104, 36, 120);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.container input{
+    display: block;
+    width: 70%;
+    /* padding is the padding of the inside */
+    padding: 0.5em 0.25em;
+    border: 1.5px solid #b6a6e3 ;
+    border-radius: 0.3em;
+    color: #4b2281;
+    outline: none;
+    font-weight: 500;
+}
+
+.totalBudgetContainer, .addExpenseContainer{
+    background-color: white;
+    padding: 1.25em 0.9em;
+    border-radius: 0.4em;
+    box-shadow: 0 0.3em 1em  #3d255e7e;
+}
