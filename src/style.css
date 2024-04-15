@@ -32,6 +32,8 @@ body{
     display: flex;
     align-items: center;
 }
+
+/* for output container */
 .flex-space{
     display: flex;
     justify-content: space-between;
@@ -46,7 +48,7 @@ body{
 
 .container input{
     display: block;
-    width: 70%;
+    width: 100%;
     /* padding is the padding of the inside */
     padding: 0.5em 0.25em;
     border: 1.5px solid #b6a6e3 ;
@@ -54,6 +56,7 @@ body{
     color: #4b2281;
     outline: none;
     font-weight: 500;
+    margin-bottom: 0.6em;
 }
 
 .totalBudgetContainer, .addExpenseContainer{
@@ -61,4 +64,59 @@ body{
     padding: 1.25em 0.9em;
     border-radius: 0.4em;
     box-shadow: 0 0.3em 1em  #3d255e7e;
+}
+
+button{
+    font-size: 1em;
+    margin-top: 0.4em;
+    background-color: #7777c4;
+    color: #f7f9fd;
+    border: none;
+    /* the black border that wraps up the button... BYEBYE */
+    outline: none;
+    padding: 0.4em 0.8em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.output-container{
+    background-color: #504179;
+    color: #f7f9fd;
+    border-radius: 0.3em;
+    box-shadow: 0 0.3em 1em  #3d255e7e;
+    font-weight: 500;
+    margin: 2em 0; 
+    /* margin is outside, padding is inside */
+    padding: 1.2em 1.3em;
+}
+
+.output-container p{
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.output-container span{
+    display: block;
+    /* inline block act like block but allows other word
+    sit next to it, while block takes up the whole line */
+    text-align: center;
+    font-weight: 350;
+    color: #f7f9fd;
+}
+
+.list-container{
+    background-color: white;
+    padding: 1.2em 1.2em;
+    box-shadow: 0 0.3em 1em  #3d255e7e;
+    border-radius: 0.6em;
+}
+
+.hide{
+    display: none;
+}
+
+.error{
+    font-weight: 550;
+    color: red;
+    margin-bottom: 0.4em;
 }

@@ -17,7 +17,7 @@
                     <p class="hide error" id ="budgetError">
                         Value can't be empty or negative.
                     </p>
-                    <input type="number" id="totalBudget" placeholder="Enter your budget ^^">
+                    <input type="number" id="totalBudget" placeholder="Enter Total Budget ^^">
                     <button type="submit" id="totalBudgetButton">Set Budget $</button>
                 </div>
 
@@ -26,14 +26,37 @@
                     <p class="hide error" id="expenseError">
                         Input can't be empty.
                     </p>
-                    <input type="text" id="productName" placeholder="Enter product/service name"/>
-                    <input type="number" id="productCost" placeholder="Enter the cost"/>
-                    <button type="submit" id="addExpenseButton">Submit new expense</button>
+                    <input type="text" id="productName" placeholder="Enter the Title of the Product or Service"/>
+                    <input type="number" id="productCost" placeholder="Enter the Cost"/>
+                    <button type="submit" id="addExpenseButton">Submit New Expense $</button>
                 </div>
             </div>
 
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="budget">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expense">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance">0</span>
+                </div>
+            </div>
+
+            <div class="list-container">
+                <div class="displayingContainer">
+                    <h3>Expense List</h3>
+                    <div class="list-item" id="listItem">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
