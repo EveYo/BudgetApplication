@@ -3,11 +3,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 200;
+    font-size: large;
+    font-style: normal;
 }
 
 body{
-    background-color: #f7f9fd;
+    background-color: #e1d8ec;
 }
 
 .wrapper{
@@ -104,11 +107,38 @@ button{
     color: #f7f9fd;
 }
 
-.list-container{
+.list{
     background-color: white;
     padding: 1.2em 1.2em;
     box-shadow: 0 0.3em 1em  #3d255e7e;
     border-radius: 0.6em;
+}
+
+.list-item{
+  width: 100%;
+  border-left: 0.4em solid #5b27afb7;
+  border-radius: 0.2em;
+  margin-bottom: 0.6em;
+  padding: 0.5em 1em;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.product{
+    font-weight: 550;
+}
+.cost{
+    font-weight: 525;
+    margin-left: 20%;
+}
+
+.edit,.delete{
+    cursor: pointer;
+    border:none;
+    margin-right: 1.1em;
+    margin-bottom: 0.5em;
+    background: transparent;
+    color:#7777c4;
 }
 
 .hide{
